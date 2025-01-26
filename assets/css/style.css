@@ -1,0 +1,78 @@
+body {
+	background-color: #121212; /* Fundo escuro */
+	color: white;
+}
+
+.logo {
+	width: auto;
+	height: 100px;
+}
+/* Cor principal: roxo */
+.btn-primary {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #482188;
+	border-color: #482188;
+}
+
+.btn-primary:hover {
+	background-color: #3e168c;
+	border-color: #3e168c;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+/* Estilo da Tabela */
+.table {
+	margin-top: 20px;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+	background-color: #333;
+}
+
+.thead-dark th {
+	background-color: #482188; /* Cabeçalho roxo */
+	color: white;
+}
+
+.table-hover tbody tr:hover {
+	background-color: #3e168c; /* Destaque roxo mais escuro nas linhas */
+}
+
+.table-bordered td,
+.table-bordered th {
+	border-color: #3e168c; /* Cor de borda das células */
+}
+
+.alert-warning {
+	background-color: #482188;
+	color: #fff;
+	border-color: #3e168c;
+}
+
+.btn-info,
+.btn-warning,
+.btn-danger {
+	color: #fff;
+}
+
+.btn-info {
+	background-color: #017cff;
+}
+
+.btn-warning {
+	background-color: #ff9f00;
+}
+
+.btn-danger {
+	background-color: #dc3545;
+}
+
+.btn-sm {
+	margin-right: 5px;
+}
