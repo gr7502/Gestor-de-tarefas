@@ -29,6 +29,7 @@ h1 {
 /* Estilo da Tabela */
 .table {
 	margin-top: 20px;
+	border-radius: 10px !important;
 }
 
 .table-striped tbody tr:nth-child(odd) {

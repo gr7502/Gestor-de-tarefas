@@ -43,7 +43,7 @@
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>
-        <a href="<?= base_url('index'); ?>" class="btn btn-secondary ml-2">Voltar</a>
+        <a href="<?= base_url('projects/index'); ?>" class="btn btn-secondary ml-2">Voltar</a>
     </form>
 </div>
 </body>
