@@ -1,0 +1,139 @@
+body {
+	background-color: #121212;
+	color: #ffffff;
+}
+h2 {
+	color: #ffffff; /* Deixa o título branco */
+}
+
+.card {
+	background-color: #1e1e1e;
+	border: 1px solid #333;
+}
+.form-label {
+	color: #ffffff; /* Deixa os títulos brancos */
+}
+
+.form-control {
+	background-color: #333;
+	color: #ffffff;
+	border: 1px solid #555;
+}
+
+.form-control:focus {
+	background-color: #333; /* Mantém o fundo escuro ao focar */
+	color: #ffffff; /* Mantém o texto branco */
+	border-color: #007bff; /* Cor da borda ao focar */
+	outline: none; /* Remove o contorno padrão do Bootstrap */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um leve brilho azul */
+}
+
+.form-control::placeholder {
+	color: #bbb;
+}
+.btn-primary {
+	background-color: #3e168c;
+	border-color: #3e168c;
+}
+.btn-primary:hover {
+	background-color: #760aa0;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	text-align: center;
+	width: 250px;
+	height: 100%;
+	background: #0b001f;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+	transition: left 0.3s ease-in-out;
+	padding: 20px;
+	z-index: 1000;
+}
+
+/* Quando a sidebar estiver visível */
+.sidebar.show {
+	left: 0;
+}
+
+/* Ajustar o conteúdo principal quando a sidebar estiver visível */
+.content {
+	margin-left: 0; /* Normal */
+	transition: margin-left 0.3s ease-in-out;
+}
+
+.content.shift {
+	margin-left: 250px; /* Move o conteúdo para a direita */
+}
+
+/* Estilizando o botão */
+.toggle-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background: #3e168c;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+	z-index: 1100; /* Garante que fique acima de outros elementos */
+	transition: transform 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+	background: #760aa0;
+	transform: scale(1.1);
+}
+
+/* Estilizando o botão de fechar */
+.close-btn {
+	position: flex-end;
+	justify-content: center !important;
+	top: 10px;
+	right: 10px;
+	background: #3e168c;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+	background: #760aa0;
+	transform: scale(1.1);
+}
+
+/* Remove as bolinhas da lista */
+.sidebar-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+/* Estiliza os itens da lista como botões */
+.sidebar-menu li {
+	margin: 5px 0;
+}
+
+/* Estiliza os botões */
+.sidebar-menu li a {
+	display: inline-block; /* Permite centralizar com text-align */
+	width: 80%; /* Ajuste conforme necessário */
+	text-decoration: none;
+	background-color: #3e168c;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background 0.3s ease;
+}
+
+/* Efeito hover */
+.sidebar-menu li a:hover {
+	background-color: #760aa0;
+}

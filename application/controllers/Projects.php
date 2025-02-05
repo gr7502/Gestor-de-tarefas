@@ -5,6 +5,9 @@ class Projects extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
+        if (!$this->session->userdata('usuario_id')) {
+            redirect('auth');
+        }
         $this->load->model('Project_model');
     }
 
@@ -37,6 +40,11 @@ class Projects extends CI_Controller {
         // Consultando tarefas
         $data['tarefas'] = $this->Project_model->get_projects(); 
         $this->load->view('home', $data);
+
+        if (!$this->session->userdata('usuario_id')) {
+            redirect('auth');
+        }
+        
     }
     
     

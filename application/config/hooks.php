@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$hook['post_controller'][] = array(
+    'class'    => 'QueryLogger',
+    'function' => 'log_queries',
+    'filename' => 'QueryLogger.php',
+    'filepath' => 'hooks'
+);
 /*
 | -------------------------------------------------------------------------
 | Hooks
